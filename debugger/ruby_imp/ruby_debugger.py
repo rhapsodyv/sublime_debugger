@@ -19,7 +19,7 @@ class RubyDebugger(Debugger):
 				 DebuggerModel.COMMAND_GET_LOCALS:RubyDebugCommand("info args", DebuggerModel.DATA_LOCALS, True),
 				 DebuggerModel.COMMAND_GET_THREADS:RubyDebugCommand("thread l", DebuggerModel.DATA_THREADS, True),
 				 DebuggerModel.COMMAND_GET_EXPRESSION:RubyDebugCommand("eval", DebuggerModel.DATA_IMMEDIATE, True),
-				 DebuggerModel.COMMAND_GET_BREAKPOINTS:RubyDebugCommand("info break", DebuggerModel.DATA_BREAKPOINTS, True),
+				 DebuggerModel.COMMAND_GET_BREAKPOINTS:RubyDebugCommand("info breakpoints", DebuggerModel.DATA_BREAKPOINTS, True),
 
 				 DebuggerModel.COMMAND_SEND_INPUT:RubyCustomDebugCommand(lambda debugger_constroller, *args: debugger_constroller.send_input(*args)),
 				 DebuggerModel.COMMAND_START:RubyCustomDebugCommand(lambda debugger_constroller, *args: debugger_constroller.start(*args)),
